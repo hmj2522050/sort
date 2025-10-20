@@ -2,7 +2,7 @@
 #include <vector>
 #include <chrono>
 #include "BubbleSort.h"
-//#include "SelectionSort.h"
+#include "SelectionSort.h"
 #include "InsertionSort.h"
 //#include "QuickSort.h"
 //#include "RadixSort.h"
@@ -20,8 +20,9 @@ void ShowArray(int* array, int size)
 int main()
 {
 	constexpr int Size = 5;
-	Sort* sort = new BubbleSort();
-	Sort* sort = new InsertionSort();
+	//Sort* sort = new BubbleSort();		//バブルソート
+	//Sort* sort = new InsertionSort();		//挿入ソート
+	Sort* sort = new SelectionSort();		//選択ソート
 
 	// 配列作成
 	vector<int> array(Size);
